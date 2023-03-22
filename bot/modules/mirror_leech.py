@@ -228,8 +228,8 @@ Number should be always before |newname or pswd:
         await add_gd_download(link, f'{DOWNLOAD_DIR}{listener.uid}', listener, name)   
     elif is_mega_link(link):
         await add_mega_download(link, f'{DOWNLOAD_DIR}{listener.uid}/', listener, name)
-    elif is_magnet(link) or ospath.exists(link):
-        await add_qb_torrent(link, f'{DOWNLOAD_DIR}{listener.uid}', listener)
+    #elif is_magnet(link) or ospath.exists(link):
+        #await add_qb_torrent(link, f'{DOWNLOAD_DIR}{listener.uid}', listener)
     else:
         if len(mesg) > 1:
             ussr = mesg[1]
